@@ -9,8 +9,15 @@ import SwiftUI
 
 struct TableView: View {
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        NavigationView {
+            VStack(spacing: 20) {
+                ForEach(1...5 , id: \.self) {_ in
+                    TableViewRow(title: "TITULO", image: "test")
+                }
+                
+                Spacer()
+            }.navigationTitle("Matérias")
+        }
     }
 }
 

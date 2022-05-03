@@ -12,7 +12,7 @@ struct TableViewRow: View {
     var image: String
     
     var body: some View {
-        HStack {
+        HStack(spacing: 14) {
             Image(image)
                 .resizable(resizingMode: .stretch)
                 .clipShape(Circle())
