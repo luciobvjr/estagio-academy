@@ -11,7 +11,7 @@ import SwiftUI
 struct _DchemApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            TableView()
         }
     }
 }

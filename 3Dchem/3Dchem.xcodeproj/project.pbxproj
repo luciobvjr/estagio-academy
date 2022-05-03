@@ -8,12 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		33F0B4122821A231004098AF /* _DchemApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33F0B4112821A231004098AF /* _DchemApp.swift */; };
-		33F0B4142821A231004098AF /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33F0B4132821A231004098AF /* ContentView.swift */; };
+		33F0B4142821A231004098AF /* TableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33F0B4132821A231004098AF /* TableView.swift */; };
 		33F0B4162821A234004098AF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 33F0B4152821A234004098AF /* Assets.xcassets */; };
 		33F0B4192821A234004098AF /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 33F0B4182821A234004098AF /* Preview Assets.xcassets */; };
 		33F0B4232821A235004098AF /* _DchemTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33F0B4222821A235004098AF /* _DchemTests.swift */; };
 		33F0B42D2821A235004098AF /* _DchemUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33F0B42C2821A235004098AF /* _DchemUITests.swift */; };
 		33F0B42F2821A235004098AF /* _DchemUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33F0B42E2821A235004098AF /* _DchemUITestsLaunchTests.swift */; };
+		33F0B43D2821A8C1004098AF /* TableViewRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33F0B43C2821A8C1004098AF /* TableViewRow.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +37,7 @@
 /* Begin PBXFileReference section */
 		33F0B40E2821A231004098AF /* 3Dchem.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = 3Dchem.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		33F0B4112821A231004098AF /* _DchemApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = _DchemApp.swift; sourceTree = "<group>"; };
-		33F0B4132821A231004098AF /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		33F0B4132821A231004098AF /* TableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableView.swift; sourceTree = "<group>"; };
 		33F0B4152821A234004098AF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		33F0B4182821A234004098AF /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		33F0B41E2821A235004098AF /* 3DchemTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = 3DchemTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -44,6 +45,7 @@
 		33F0B4282821A235004098AF /* 3DchemUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = 3DchemUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		33F0B42C2821A235004098AF /* _DchemUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = _DchemUITests.swift; sourceTree = "<group>"; };
 		33F0B42E2821A235004098AF /* _DchemUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = _DchemUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		33F0B43C2821A8C1004098AF /* TableViewRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewRow.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,7 +97,8 @@
 			isa = PBXGroup;
 			children = (
 				33F0B4112821A231004098AF /* _DchemApp.swift */,
-				33F0B4132821A231004098AF /* ContentView.swift */,
+				33F0B4132821A231004098AF /* TableView.swift */,
+				33F0B43C2821A8C1004098AF /* TableViewRow.swift */,
 				33F0B4152821A234004098AF /* Assets.xcassets */,
 				33F0B4172821A234004098AF /* Preview Content */,
 			);
@@ -257,7 +260,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				33F0B4142821A231004098AF /* ContentView.swift in Sources */,
+				33F0B43D2821A8C1004098AF /* TableViewRow.swift in Sources */,
+				33F0B4142821A231004098AF /* TableView.swift in Sources */,
 				33F0B4122821A231004098AF /* _DchemApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
