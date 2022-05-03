@@ -15,6 +15,7 @@
 		33F0B42D2821A235004098AF /* _DchemUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33F0B42C2821A235004098AF /* _DchemUITests.swift */; };
 		33F0B42F2821A235004098AF /* _DchemUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33F0B42E2821A235004098AF /* _DchemUITestsLaunchTests.swift */; };
 		33F0B43D2821A8C1004098AF /* TableViewRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33F0B43C2821A8C1004098AF /* TableViewRow.swift */; };
+		33F0B4402821B30A004098AF /* Subject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33F0B43F2821B30A004098AF /* Subject.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +47,7 @@
 		33F0B42C2821A235004098AF /* _DchemUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = _DchemUITests.swift; sourceTree = "<group>"; };
 		33F0B42E2821A235004098AF /* _DchemUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = _DchemUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		33F0B43C2821A8C1004098AF /* TableViewRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewRow.swift; sourceTree = "<group>"; };
+		33F0B43F2821B30A004098AF /* Subject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Subject.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +98,7 @@
 		33F0B4102821A231004098AF /* 3Dchem */ = {
 			isa = PBXGroup;
 			children = (
+				33F0B43E2821B2F7004098AF /* Model */,
 				33F0B4112821A231004098AF /* _DchemApp.swift */,
 				33F0B4132821A231004098AF /* TableView.swift */,
 				33F0B43C2821A8C1004098AF /* TableViewRow.swift */,
@@ -128,6 +131,14 @@
 				33F0B42E2821A235004098AF /* _DchemUITestsLaunchTests.swift */,
 			);
 			path = 3DchemUITests;
+			sourceTree = "<group>";
+		};
+		33F0B43E2821B2F7004098AF /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				33F0B43F2821B30A004098AF /* Subject.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -260,6 +271,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				33F0B4402821B30A004098AF /* Subject.swift in Sources */,
 				33F0B43D2821A8C1004098AF /* TableViewRow.swift in Sources */,
 				33F0B4142821A231004098AF /* TableView.swift in Sources */,
 				33F0B4122821A231004098AF /* _DchemApp.swift in Sources */,
