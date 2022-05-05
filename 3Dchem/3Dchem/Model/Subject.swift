@@ -8,9 +8,13 @@
 import Foundation
 import SwiftUI
 
+struct SubjectList {
+    let data: [Subject]
+}
+
 struct Subject {
     let title: String
     let text: String
-    let image: String
-    let model3d: String
+//    let image: String
+//    let model3d: String
 }
