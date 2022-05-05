@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct SubjectView: View {
+    @StateObject var subjectViewModel = SubjectViewModel()
     let title: String
     let text: String
     
@@ -16,7 +17,7 @@ struct SubjectView: View {
             ScrollView {
                 VStack {
                     HStack {
-                        Text(text)
+                        Text(subjectViewModel.subjecList?.data.first?.text ?? "Fail")
                             .padding()
                         Spacer()
                     }
@@ -24,7 +25,11 @@ struct SubjectView: View {
                     MyButton()
                 }
             }
-            .navigationTitle(Text(title))
+            .navigationTitle(Text(subjectViewModel.subjecList?.data.first?.title ?? "Fail"))
+        }
+        .onAppear {
+            subjectViewModel.parseJSON()
+            print(subjectViewModel.subjecList?.data.first?.text)
         }
     }
 }

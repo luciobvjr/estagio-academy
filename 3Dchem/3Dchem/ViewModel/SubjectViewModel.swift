@@ -8,9 +8,9 @@
 import Foundation
 
 class SubjectViewModel: ObservableObject {
-    var subjecList: SubjectList?
+    @Published var subjecList: SubjectList?
     
-    private func parseJSON() {
+    func parseJSON() {
         guard let path = Bundle.main.path(forResource: "data",
                                           ofType: "json"
         ) else {
