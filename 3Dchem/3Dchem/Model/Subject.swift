@@ -8,11 +8,11 @@
 import Foundation
 import SwiftUI
 
-struct SubjectList {
+struct SubjectList: Decodable {
     let data: [Subject]
 }
 
-struct Subject {
+struct Subject: Decodable {
     let title: String
     let text: String
 //    let image: String
