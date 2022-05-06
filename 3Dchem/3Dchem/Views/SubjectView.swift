@@ -24,7 +24,12 @@ struct SubjectView: View {
             }
         }
         .navigationTitle(Text(title))
-        .navigationBarTitleDisplayMode(.automatic)
+        .navigationBarBackButtonHidden(true)
+        .toolbar {
+            ToolbarItem(placement: .navigationBarLeading) {
+                BackButton()
+            }
+        }
     }
 }
 
