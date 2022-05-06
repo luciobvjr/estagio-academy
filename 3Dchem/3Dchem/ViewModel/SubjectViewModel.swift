@@ -8,7 +8,7 @@
 import Foundation
 
 class SubjectViewModel: ObservableObject {
-    @Published var subjecList: SubjectList?
+    @Published var subjectList: SubjectList?
     
     func parseJSON() {
         guard let path = Bundle.main.path(forResource: "data",
@@ -21,9 +21,14 @@ class SubjectViewModel: ObservableObject {
         
         do {
             let jsonData = try Data(contentsOf: url)
-            subjecList = try JSONDecoder().decode(SubjectList.self, from: jsonData)
+            subjectList = try JSONDecoder().decode(SubjectList.self, from: jsonData)
         } catch {
             print("Error: \(error)")
         }
+    }
+    
+    func subjectsCount() -> Int {
+        let count = subjectList?.data.count
+        return count ?? 0
     }
 }

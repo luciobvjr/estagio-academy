@@ -8,29 +8,23 @@
 import SwiftUI
 
 struct SubjectView: View {
-    @StateObject var subjectViewModel = SubjectViewModel()
     let title: String
     let text: String
     
     var body: some View {
-        NavigationView() {
-            ScrollView {
-                VStack {
-                    HStack {
-                        Text(subjectViewModel.subjecList?.data.first?.text ?? "Fail")
-                            .padding()
-                        Spacer()
-                    }
-                
-                    MyButton()
+        ScrollView {
+            VStack {
+                HStack {
+                    Text(text)
+                        .padding()
+                    Spacer()
                 }
+                
+                MyButton()
             }
-            .navigationTitle(Text(subjectViewModel.subjecList?.data.first?.title ?? "Fail"))
         }
-        .onAppear {
-            subjectViewModel.parseJSON()
-            print(subjectViewModel.subjecList?.data.first?.text)
-        }
+        .navigationTitle(Text(title))
+        .navigationBarTitleDisplayMode(.automatic)
     }
 }
 

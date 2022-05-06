@@ -20,10 +20,10 @@ struct TableViewRow: View {
                 .padding(.leading)
     
             Text(title)
+                .font(.title2)
             
             Spacer()
         }
-        
     }
 }
 
