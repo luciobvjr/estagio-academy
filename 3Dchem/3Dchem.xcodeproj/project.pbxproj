@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		33388D5B2825AFEC009DF672 /* BackButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33388D5A2825AFEC009DF672 /* BackButton.swift */; };
 		33F0B4122821A231004098AF /* _DchemApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33F0B4112821A231004098AF /* _DchemApp.swift */; };
 		33F0B4142821A231004098AF /* TableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33F0B4132821A231004098AF /* TableView.swift */; };
 		33F0B4162821A234004098AF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 33F0B4152821A234004098AF /* Assets.xcassets */; };
@@ -17,6 +18,8 @@
 		33F0B43D2821A8C1004098AF /* TableViewRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33F0B43C2821A8C1004098AF /* TableViewRow.swift */; };
 		33F0B4402821B30A004098AF /* Subject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33F0B43F2821B30A004098AF /* Subject.swift */; };
 		33F0B4432821BE66004098AF /* SubjectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33F0B4422821BE66004098AF /* SubjectView.swift */; };
+		33F0B4672824471C004098AF /* data.json in Resources */ = {isa = PBXBuildFile; fileRef = 33F0B4662824471C004098AF /* data.json */; };
+		33F0B46A28244DF9004098AF /* SubjectViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33F0B46928244DF9004098AF /* SubjectViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,6 +40,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		33388D5A2825AFEC009DF672 /* BackButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackButton.swift; sourceTree = "<group>"; };
 		33F0B40E2821A231004098AF /* 3Dchem.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = 3Dchem.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		33F0B4112821A231004098AF /* _DchemApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = _DchemApp.swift; sourceTree = "<group>"; };
 		33F0B4132821A231004098AF /* TableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableView.swift; sourceTree = "<group>"; };
@@ -50,6 +54,8 @@
 		33F0B43C2821A8C1004098AF /* TableViewRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewRow.swift; sourceTree = "<group>"; };
 		33F0B43F2821B30A004098AF /* Subject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Subject.swift; sourceTree = "<group>"; };
 		33F0B4422821BE66004098AF /* SubjectView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubjectView.swift; sourceTree = "<group>"; };
+		33F0B4662824471C004098AF /* data.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = data.json; path = ../../data.json; sourceTree = "<group>"; };
+		33F0B46928244DF9004098AF /* SubjectViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubjectViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,8 +106,10 @@
 		33F0B4102821A231004098AF /* 3Dchem */ = {
 			isa = PBXGroup;
 			children = (
+				33F0B4662824471C004098AF /* data.json */,
 				33F0B4412821BE05004098AF /* Views */,
 				33F0B43E2821B2F7004098AF /* Model */,
+				33F0B46828244D64004098AF /* ViewModel */,
 				33F0B4112821A231004098AF /* _DchemApp.swift */,
 				33F0B4152821A234004098AF /* Assets.xcassets */,
 				33F0B4172821A234004098AF /* Preview Content */,
@@ -148,8 +156,17 @@
 				33F0B4132821A231004098AF /* TableView.swift */,
 				33F0B43C2821A8C1004098AF /* TableViewRow.swift */,
 				33F0B4422821BE66004098AF /* SubjectView.swift */,
+				33388D5A2825AFEC009DF672 /* BackButton.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		33F0B46828244D64004098AF /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				33F0B46928244DF9004098AF /* SubjectViewModel.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -257,6 +274,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				33F0B4192821A234004098AF /* Preview Assets.xcassets in Resources */,
+				33F0B4672824471C004098AF /* data.json in Resources */,
 				33F0B4162821A234004098AF /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -287,6 +305,8 @@
 				33F0B4432821BE66004098AF /* SubjectView.swift in Sources */,
 				33F0B4142821A231004098AF /* TableView.swift in Sources */,
 				33F0B4122821A231004098AF /* _DchemApp.swift in Sources */,
+				33388D5B2825AFEC009DF672 /* BackButton.swift in Sources */,
+				33F0B46A28244DF9004098AF /* SubjectViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -12,19 +12,23 @@ struct SubjectView: View {
     let text: String
     
     var body: some View {
-        NavigationView() {
-            ScrollView {
-                VStack {
-                    HStack {
-                        Text(text)
-                            .padding()
-                        Spacer()
-                    }
-                
-                    MyButton()
+        ScrollView {
+            VStack {
+                HStack {
+                    Text(text)
+                        .padding()
+                    Spacer()
                 }
+                
+                MyButton()
             }
-            .navigationTitle(Text(title))
+        }
+        .navigationTitle(Text(title))
+        .navigationBarBackButtonHidden(true)
+        .toolbar {
+            ToolbarItem(placement: .navigationBarLeading) {
+                BackButton()
+            }
         }
     }
 }

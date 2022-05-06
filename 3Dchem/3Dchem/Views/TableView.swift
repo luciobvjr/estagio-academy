@@ -8,15 +8,36 @@
 import SwiftUI
 
 struct TableView: View {
+    @StateObject var subjectViewModel = SubjectViewModel()
+    
+    @State var count = 0
+    @State var titleError = "Erro ao carregar título"
+    @State var textError = "Erro ao carregar texto"
+    
     var body: some View {
         NavigationView {
-            VStack(spacing: 20) {
-                ForEach(1...5 , id: \.self) {_ in
-                    TableViewRow(title: "TITULO", image: "test")
+            if count > 0 {
+                VStack(spacing: 20) {
+                    ForEach(1...count , id: \.self) {index in
+                        NavigationLink(destination: SubjectView(title: subjectViewModel.subjectList?.data[index-1].title ?? titleError,
+                                                                text: subjectViewModel.subjectList?.data[index-1].text ?? textError)) {
+                            TableViewRow(title: subjectViewModel.subjectList?.data[index-1].title ?? titleError,
+                                         image: "test")
+                        }
+                        .foregroundColor(.black)
+                    }
+                    
+                    Spacer()
                 }
-                
-                Spacer()
-            }.navigationTitle("Matérias")
+                .navigationTitle("Matérias")
+                .navigationBarTitleDisplayMode(.inline)
+                .padding(.top)
+            } else {
+                Text("Ocorreu um erro: Não foi possível carregar as lições")
+            }   
+        }.onAppear {
+            subjectViewModel.parseJSON()
+            count = subjectViewModel.subjectsCount()
         }
     }
 }
