@@ -19,9 +19,12 @@ struct TableView: View {
             if count > 0 {
                 VStack(spacing: 20) {
                     ForEach(1...count , id: \.self) {index in
-                        NavigationLink(destination: SubjectView(title: subjectViewModel.subjectList?.data[index-1].title ?? titleError,
-                                                                text: subjectViewModel.subjectList?.data[index-1].text ?? textError)) {
-                            TableViewRow(title: subjectViewModel.subjectList?.data[index-1].title ?? titleError,
+                        let title = subjectViewModel.subjectList?.data[index-1].title
+                        let text = subjectViewModel.subjectList?.data[index-1].text
+                        
+                        NavigationLink(destination: SubjectView(title: title ?? titleError,
+                                                                text: text ?? textError)) {
+                            TableViewRow(title: title ?? titleError,
                                          image: "test")
                         }
                         .foregroundColor(.black)
