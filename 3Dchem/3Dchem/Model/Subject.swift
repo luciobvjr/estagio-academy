@@ -14,7 +14,7 @@ struct SubjectList: Decodable {
 
 struct Subject: Decodable {
     let title: String
-    let text: String
+    let text: [String]
 //    let image: String
 //    let model3d: String
 }

@@ -2,12 +2,7 @@
     "data": [
         {
             "title": "Modelos atômicos",
-            "text": "Os modelos atômicos são os aspectos estruturais dos átomos que foram apresentados por cientistas na tentativa de compreender melhor o átomo e a sua composição.\n\nEm 1808, o cientista inglês John Dalton propôs uma explicação para a propriedade da matéria. Trata-se da primeira teoria atômica que dá as bases para o modelo atômico conhecido atualmente.\n\nA constituição da matéria é motivo de estudos desde a antiguidade. Os pensadores Leucipo (500 a.C.) e Demócrito (460 a.C.) formularam a ideia de haver um limite para a pequenez das partículas.\n\nEles afirmavam que elas se tornariam tão pequenas que não poderiam ser divididas. Chamou-se a essa partícula última de átomo. A palavra é derivada dos radicais gregos que, juntos, significam o que não se pode dividir."
-        },
-        
-        {
-            "title": "Arroz doce",
-            "text": "AAAAAA tômicos são os aspectos estruturais dos átomos que foram apresentados por cientistas na tentativa de compreender melhor o átomo e a sua composição.\n\nEm 1808, o cientista inglês John Dalton propôs uma explicação para a propriedade da matéria. Trata-se da primeira teoria atômica que dá as bases para o modelo atômico conhecido atualmente.\n\nA constituição da matéria é motivo de estudos desde a antiguidade. Os pensadores Leucipo (500 a.C.) e Demócrito (460 a.C.) formularam a ideia de haver um limite para a pequenez das partículas.\n\nEles afirmavam que elas se tornariam tão pequenas que não poderiam ser divididas. Chamou-se a essa partícula última de átomo. A palavra é derivada dos radicais gregos que, juntos, significam o que não se pode dividir."
+            "text": ["1","2"]
         }
     ]
 }
