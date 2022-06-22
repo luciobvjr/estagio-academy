@@ -12,6 +12,7 @@ struct _DchemApp: App {
     var body: some Scene {
         WindowGroup {
             TableView()
+//            ARViewContainer()
         }
     }
 }

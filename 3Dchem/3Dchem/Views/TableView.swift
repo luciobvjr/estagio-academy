@@ -20,10 +20,12 @@ struct TableView: View {
                 VStack(spacing: 20) {
                     ForEach(1...count , id: \.self) {index in
                         let title = subjectViewModel.subjectList?.data[index-1].title
-                        let text = subjectViewModel.subjectList?.data[index-1].text
+                        let texts = subjectViewModel.subjectList?.data[index-1].texts
+                        let images = subjectViewModel.subjectList?.data[index-1].images
                         
                         NavigationLink(destination: SubjectView(title: title ?? titleError,
-                                                                text: text ?? textError)) {
+                                                                texts: texts ?? [textError],
+                                                                images: images ?? [])) {
                             TableViewRow(title: title ?? titleError,
                                          image: "test")
                         }
@@ -36,7 +38,7 @@ struct TableView: View {
                 .navigationBarTitleDisplayMode(.inline)
                 .padding(.top)
             } else {
-                Text("Ocorreu um erro: Não foi possível carregar as lições")
+                Text("Ocorreu um erro: Não foi possível carregar as lições.")
             }   
         }.onAppear {
             subjectViewModel.parseJSON()

@@ -8,13 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		33388D5B2825AFEC009DF672 /* BackButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33388D5A2825AFEC009DF672 /* BackButton.swift */; };
-		33F0B4122821A231004098AF /* _DchemApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33F0B4112821A231004098AF /* _DchemApp.swift */; };
+		333CB97028613794001606D0 /* ARViewContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 333CB96F28613794001606D0 /* ARViewContainer.swift */; };
+		33F0B4122821A231004098AF /* 3DchemApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33F0B4112821A231004098AF /* 3DchemApp.swift */; };
 		33F0B4142821A231004098AF /* TableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33F0B4132821A231004098AF /* TableView.swift */; };
 		33F0B4162821A234004098AF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 33F0B4152821A234004098AF /* Assets.xcassets */; };
 		33F0B4192821A234004098AF /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 33F0B4182821A234004098AF /* Preview Assets.xcassets */; };
-		33F0B4232821A235004098AF /* _DchemTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33F0B4222821A235004098AF /* _DchemTests.swift */; };
-		33F0B42D2821A235004098AF /* _DchemUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33F0B42C2821A235004098AF /* _DchemUITests.swift */; };
-		33F0B42F2821A235004098AF /* _DchemUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33F0B42E2821A235004098AF /* _DchemUITestsLaunchTests.swift */; };
+		33F0B4232821A235004098AF /* 3DchemTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33F0B4222821A235004098AF /* 3DchemTests.swift */; };
+		33F0B42D2821A235004098AF /* 3DchemUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33F0B42C2821A235004098AF /* 3DchemUITests.swift */; };
+		33F0B42F2821A235004098AF /* 3DchemUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33F0B42E2821A235004098AF /* 3DchemUITestsLaunchTests.swift */; };
 		33F0B43D2821A8C1004098AF /* TableViewRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33F0B43C2821A8C1004098AF /* TableViewRow.swift */; };
 		33F0B4402821B30A004098AF /* Subject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33F0B43F2821B30A004098AF /* Subject.swift */; };
 		33F0B4432821BE66004098AF /* SubjectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33F0B4422821BE66004098AF /* SubjectView.swift */; };
@@ -41,16 +42,17 @@
 
 /* Begin PBXFileReference section */
 		33388D5A2825AFEC009DF672 /* BackButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackButton.swift; sourceTree = "<group>"; };
+		333CB96F28613794001606D0 /* ARViewContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARViewContainer.swift; sourceTree = "<group>"; };
 		33F0B40E2821A231004098AF /* 3Dchem.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = 3Dchem.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		33F0B4112821A231004098AF /* _DchemApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = _DchemApp.swift; sourceTree = "<group>"; };
+		33F0B4112821A231004098AF /* 3DchemApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 3DchemApp.swift; sourceTree = "<group>"; };
 		33F0B4132821A231004098AF /* TableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableView.swift; sourceTree = "<group>"; };
 		33F0B4152821A234004098AF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		33F0B4182821A234004098AF /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		33F0B41E2821A235004098AF /* 3DchemTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = 3DchemTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		33F0B4222821A235004098AF /* _DchemTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = _DchemTests.swift; sourceTree = "<group>"; };
+		33F0B4222821A235004098AF /* 3DchemTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 3DchemTests.swift; sourceTree = "<group>"; };
 		33F0B4282821A235004098AF /* 3DchemUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = 3DchemUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		33F0B42C2821A235004098AF /* _DchemUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = _DchemUITests.swift; sourceTree = "<group>"; };
-		33F0B42E2821A235004098AF /* _DchemUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = _DchemUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		33F0B42C2821A235004098AF /* 3DchemUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 3DchemUITests.swift; sourceTree = "<group>"; };
+		33F0B42E2821A235004098AF /* 3DchemUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 3DchemUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		33F0B43C2821A8C1004098AF /* TableViewRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewRow.swift; sourceTree = "<group>"; };
 		33F0B43F2821B30A004098AF /* Subject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Subject.swift; sourceTree = "<group>"; };
 		33F0B4422821BE66004098AF /* SubjectView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubjectView.swift; sourceTree = "<group>"; };
@@ -110,7 +112,7 @@
 				33F0B4412821BE05004098AF /* Views */,
 				33F0B43E2821B2F7004098AF /* Model */,
 				33F0B46828244D64004098AF /* ViewModel */,
-				33F0B4112821A231004098AF /* _DchemApp.swift */,
+				33F0B4112821A231004098AF /* 3DchemApp.swift */,
 				33F0B4152821A234004098AF /* Assets.xcassets */,
 				33F0B4172821A234004098AF /* Preview Content */,
 			);
@@ -128,7 +130,7 @@
 		33F0B4212821A235004098AF /* 3DchemTests */ = {
 			isa = PBXGroup;
 			children = (
-				33F0B4222821A235004098AF /* _DchemTests.swift */,
+				33F0B4222821A235004098AF /* 3DchemTests.swift */,
 			);
 			path = 3DchemTests;
 			sourceTree = "<group>";
@@ -136,8 +138,8 @@
 		33F0B42B2821A235004098AF /* 3DchemUITests */ = {
 			isa = PBXGroup;
 			children = (
-				33F0B42C2821A235004098AF /* _DchemUITests.swift */,
-				33F0B42E2821A235004098AF /* _DchemUITestsLaunchTests.swift */,
+				33F0B42C2821A235004098AF /* 3DchemUITests.swift */,
+				33F0B42E2821A235004098AF /* 3DchemUITestsLaunchTests.swift */,
 			);
 			path = 3DchemUITests;
 			sourceTree = "<group>";
@@ -157,6 +159,7 @@
 				33F0B43C2821A8C1004098AF /* TableViewRow.swift */,
 				33F0B4422821BE66004098AF /* SubjectView.swift */,
 				33388D5A2825AFEC009DF672 /* BackButton.swift */,
+				333CB96F28613794001606D0 /* ARViewContainer.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -301,10 +304,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				33F0B4402821B30A004098AF /* Subject.swift in Sources */,
+				333CB97028613794001606D0 /* ARViewContainer.swift in Sources */,
 				33F0B43D2821A8C1004098AF /* TableViewRow.swift in Sources */,
 				33F0B4432821BE66004098AF /* SubjectView.swift in Sources */,
 				33F0B4142821A231004098AF /* TableView.swift in Sources */,
-				33F0B4122821A231004098AF /* _DchemApp.swift in Sources */,
+				33F0B4122821A231004098AF /* 3DchemApp.swift in Sources */,
 				33388D5B2825AFEC009DF672 /* BackButton.swift in Sources */,
 				33F0B46A28244DF9004098AF /* SubjectViewModel.swift in Sources */,
 			);
@@ -314,7 +318,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				33F0B4232821A235004098AF /* _DchemTests.swift in Sources */,
+				33F0B4232821A235004098AF /* 3DchemTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -322,8 +326,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				33F0B42F2821A235004098AF /* _DchemUITestsLaunchTests.swift in Sources */,
-				33F0B42D2821A235004098AF /* _DchemUITests.swift in Sources */,
+				33F0B42F2821A235004098AF /* 3DchemUITestsLaunchTests.swift in Sources */,
+				33F0B42D2821A235004098AF /* 3DchemUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -468,9 +472,12 @@
 				DEVELOPMENT_TEAM = 8WZ2N4SSYS;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "3Dchem-Info.plist";
+				INFOPLIST_KEY_NSCameraUsageDescription = "This app uses camera to present 3D models";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UIRequiredDeviceCapabilities = arkit;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -497,9 +504,12 @@
 				DEVELOPMENT_TEAM = 8WZ2N4SSYS;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "-Dchem-Info.plist";
+				INFOPLIST_KEY_NSCameraUsageDescription = "This app uses camera to present 3D models";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UIRequiredDeviceCapabilities = arkit;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (

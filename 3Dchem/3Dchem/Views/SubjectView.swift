@@ -9,18 +9,28 @@ import SwiftUI
 
 struct SubjectView: View {
     let title: String
-    let text: String
+    let texts: [String]
+    let images: [String]
     
     var body: some View {
         ScrollView {
             VStack {
-                HStack {
-                    Text(text)
-                        .padding()
-                    Spacer()
+                ForEach(1...texts.count, id: \.self) { index in
+                    
+                    Text(texts[index-1])
+                        .font(.body)
+                    
+                    if images.count >= index {
+                        Image(images[index-1])
+                            .resizable()
+                            .aspectRatio(contentMode: .fit)
+                        
+                        NavigationLink(destination: ARViewContainer()) {
+                            MyButton()
+                        }
+                    }
                 }
-                
-                MyButton()
+                    .padding()
             }
         }
         .navigationTitle(Text(title))
@@ -37,22 +47,22 @@ struct MyButton: View {
     var body: some View {
         ZStack {
             Rectangle()
-                .frame(height: 46, alignment: .center)
+                .frame(height: 36, alignment: .center)
                 .foregroundColor(.black)
                 .cornerRadius(20)
                 .padding([.leading, .trailing])
             
             Text("Load 3D model")
                 .foregroundColor(Color.white)
-                .font(.system(size: 20))
+                .font(.body)
         }
-        .padding(.bottom)
     }
 }
 
 struct SubjectView_Previews: PreviewProvider {
     static var previews: some View {
         SubjectView(title: "Geometria molecular",
-                    text: "Second line of text in here for this text element or component. Second line of text in here for this text element or component. Second line of text in here for this text element or component. Second line of text in here for this text element or component. Second line of text in here for this text element or component. Second line of text in here for this text element or component. Second line of text in here for this text element or component. Second line of text in here for this text element or component. Second line of text in here for this text element or component. Second line of text in here for this text element or component. Second line of text in here for this text element or component. Second line of text in here for this text element or component. Second line of text in here for this text element or component. Second line of text in here for this text element or component. Second line of text in here for this text element or component. ")
+                    texts: ["1","2"],
+                    images: ["dalton", "thomson"])
     }
 }
