@@ -25,7 +25,9 @@ struct SubjectView: View {
                             .resizable()
                             .aspectRatio(contentMode: .fit)
                         
-                        MyButton()
+                        NavigationLink(destination: ARViewContainer()) {
+                            MyButton()
+                        }
                     }
                 }
                     .padding()
