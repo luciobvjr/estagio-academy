@@ -29,7 +29,7 @@ struct TableView: View {
                             TableViewRow(title: title ?? titleError,
                                          image: "test")
                         }
-                        .foregroundColor(.black)
+                        .foregroundColor(Color(uiColor: UIColor.systemBackground))
                     }
                     
                     Spacer()

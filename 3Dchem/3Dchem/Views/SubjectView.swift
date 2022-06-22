@@ -21,12 +21,15 @@ struct SubjectView: View {
                         .font(.body)
                     
                     if images.count >= index {
-                        Image(images[index-1])
-                            .resizable()
-                            .aspectRatio(contentMode: .fit)
-                        
-                        NavigationLink(destination: ARViewContainer()) {
-                            MyButton()
+                        VStack(spacing: -20) {
+                            Image(images[index-1])
+                                .resizable()
+                                .aspectRatio(contentMode: .fill)
+                                .frame(width: 0, height: 300)
+                            
+                            NavigationLink(destination: ARViewContainer()) {
+                                MyButton()
+                            }
                         }
                     }
                 }
@@ -48,12 +51,12 @@ struct MyButton: View {
         ZStack {
             Rectangle()
                 .frame(height: 36, alignment: .center)
-                .foregroundColor(.black)
+                .foregroundColor(Color(uiColor: UIColor(.primary)))
                 .cornerRadius(20)
                 .padding([.leading, .trailing])
             
             Text("Load 3D model")
-                .foregroundColor(Color.white)
+                .foregroundColor(Color(uiColor: UIColor.systemBackground))
                 .font(.body)
         }
     }

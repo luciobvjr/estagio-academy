@@ -21,6 +21,7 @@ struct TableViewRow: View {
     
             Text(title)
                 .font(.title2)
+                .foregroundColor(Color(uiColor: UIColor(.primary)))
             
             Spacer()
         }
@@ -29,6 +30,6 @@ struct TableViewRow: View {
 
 struct TableViewRow_Previews: PreviewProvider {
     static var previews: some View {
-        TableViewRow(title: "TITULO", image: "test")
+        TableViewRow(title: "Titulo", image: "test")
     }
 }
