@@ -9,6 +9,11 @@
 /* Begin PBXBuildFile section */
 		33388D5B2825AFEC009DF672 /* BackButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33388D5A2825AFEC009DF672 /* BackButton.swift */; };
 		333CB97028613794001606D0 /* ARViewContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 333CB96F28613794001606D0 /* ARViewContainer.swift */; };
+		33954E952863DB8100FFA854 /* dalton.scn in Resources */ = {isa = PBXBuildFile; fileRef = 33954E942863DB8100FFA854 /* dalton.scn */; };
+		33D492E3286A7DD800FC8CC1 /* thomson.scn in Resources */ = {isa = PBXBuildFile; fileRef = 33D492E2286A7DD800FC8CC1 /* thomson.scn */; };
+		33D492E7286A7EC100FC8CC1 /* rutherford.scn in Resources */ = {isa = PBXBuildFile; fileRef = 33D492E6286A7EC100FC8CC1 /* rutherford.scn */; };
+		33D492EB286A7F4D00FC8CC1 /* bohr.scn in Resources */ = {isa = PBXBuildFile; fileRef = 33D492EA286A7F4D00FC8CC1 /* bohr.scn */; };
+		33D492EF286A800200FC8CC1 /* atomicStructure.scn in Resources */ = {isa = PBXBuildFile; fileRef = 33D492EE286A800200FC8CC1 /* atomicStructure.scn */; };
 		33F0B4122821A231004098AF /* 3DchemApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33F0B4112821A231004098AF /* 3DchemApp.swift */; };
 		33F0B4142821A231004098AF /* TableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33F0B4132821A231004098AF /* TableView.swift */; };
 		33F0B4162821A234004098AF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 33F0B4152821A234004098AF /* Assets.xcassets */; };
@@ -43,6 +48,11 @@
 /* Begin PBXFileReference section */
 		33388D5A2825AFEC009DF672 /* BackButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackButton.swift; sourceTree = "<group>"; };
 		333CB96F28613794001606D0 /* ARViewContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARViewContainer.swift; sourceTree = "<group>"; };
+		33954E942863DB8100FFA854 /* dalton.scn */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = dalton.scn; sourceTree = "<group>"; };
+		33D492E2286A7DD800FC8CC1 /* thomson.scn */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = thomson.scn; sourceTree = "<group>"; };
+		33D492E6286A7EC100FC8CC1 /* rutherford.scn */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = rutherford.scn; sourceTree = "<group>"; };
+		33D492EA286A7F4D00FC8CC1 /* bohr.scn */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = bohr.scn; sourceTree = "<group>"; };
+		33D492EE286A800200FC8CC1 /* atomicStructure.scn */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = atomicStructure.scn; sourceTree = "<group>"; };
 		33F0B40E2821A231004098AF /* 3Dchem.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = 3Dchem.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		33F0B4112821A231004098AF /* 3DchemApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 3DchemApp.swift; sourceTree = "<group>"; };
 		33F0B4132821A231004098AF /* TableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableView.swift; sourceTree = "<group>"; };
@@ -56,7 +66,7 @@
 		33F0B43C2821A8C1004098AF /* TableViewRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewRow.swift; sourceTree = "<group>"; };
 		33F0B43F2821B30A004098AF /* Subject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Subject.swift; sourceTree = "<group>"; };
 		33F0B4422821BE66004098AF /* SubjectView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubjectView.swift; sourceTree = "<group>"; };
-		33F0B4662824471C004098AF /* data.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = data.json; path = ../../data.json; sourceTree = "<group>"; };
+		33F0B4662824471C004098AF /* data.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = data.json; sourceTree = "<group>"; };
 		33F0B46928244DF9004098AF /* SubjectViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubjectViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -85,6 +95,29 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		333DC181286A7C5B008AE56B /* SCNAssets */ = {
+			isa = PBXGroup;
+			children = (
+				33D492EE286A800200FC8CC1 /* atomicStructure.scn */,
+				33D492EA286A7F4D00FC8CC1 /* bohr.scn */,
+				33D492E6286A7EC100FC8CC1 /* rutherford.scn */,
+				33D492E2286A7DD800FC8CC1 /* thomson.scn */,
+				33954E942863DB8100FFA854 /* dalton.scn */,
+			);
+			path = SCNAssets;
+			sourceTree = "<group>";
+		};
+		33954E8D2863D99500FFA854 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				333DC181286A7C5B008AE56B /* SCNAssets */,
+				33F0B4152821A234004098AF /* Assets.xcassets */,
+				33F0B4112821A231004098AF /* 3DchemApp.swift */,
+				33F0B4662824471C004098AF /* data.json */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
 		33F0B4052821A230004098AF = {
 			isa = PBXGroup;
 			children = (
@@ -108,12 +141,10 @@
 		33F0B4102821A231004098AF /* 3Dchem */ = {
 			isa = PBXGroup;
 			children = (
-				33F0B4662824471C004098AF /* data.json */,
+				33954E8D2863D99500FFA854 /* Shared */,
 				33F0B4412821BE05004098AF /* Views */,
 				33F0B43E2821B2F7004098AF /* Model */,
 				33F0B46828244D64004098AF /* ViewModel */,
-				33F0B4112821A231004098AF /* 3DchemApp.swift */,
-				33F0B4152821A234004098AF /* Assets.xcassets */,
 				33F0B4172821A234004098AF /* Preview Content */,
 			);
 			path = 3Dchem;
@@ -276,8 +307,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				33D492EF286A800200FC8CC1 /* atomicStructure.scn in Resources */,
 				33F0B4192821A234004098AF /* Preview Assets.xcassets in Resources */,
+				33D492E7286A7EC100FC8CC1 /* rutherford.scn in Resources */,
 				33F0B4672824471C004098AF /* data.json in Resources */,
+				33954E952863DB8100FFA854 /* dalton.scn in Resources */,
+				33D492EB286A7F4D00FC8CC1 /* bohr.scn in Resources */,
+				33D492E3286A7DD800FC8CC1 /* thomson.scn in Resources */,
 				33F0B4162821A234004098AF /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
